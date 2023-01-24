@@ -1,0 +1,33 @@
+@import "/src/styles/colors";
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+
+body {
+  background-color: $gray;
+  font-size: 16px;
+  color: $text;
+  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica,
+    Roboto, Arial, sans-serif;
+  margin: 0px;
+
+  textarea,
+  input {
+    &:focus,
+    &:hover {
+      border-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .basicContainer {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 45px;
+  }
+
+  .decimals {
+    font-size: 0.45em;
+    position: absolute;
+    padding-top: 0.3rem;
+  }
+}

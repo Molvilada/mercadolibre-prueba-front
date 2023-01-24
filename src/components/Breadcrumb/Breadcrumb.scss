@@ -1,0 +1,16 @@
+@import "/src/styles/colors";
+
+.Breadcrumb {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  span {
+    font-size: 0.95rem;
+    color: $text-tertiary;
+    &:last-child {
+      font-weight: bold;
+    }
+    &:not(:last-child)::after {
+      content: " > ";
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "/src/styles/colors";
+
+.SearchBar {
+  background-color: $yellow;
+  overflow: hidden;
+  .MuiContainer-root {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-width: 1.5px;
+    border-color: transparent;
+  }
+  .searchIcon {
+    width: 45px;
+    height: 40px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: $gray;
+    img {
+      height: 20px;
+    }
+    cursor: pointer;
+  }
+  img {
+    height: 40px;
+  }
+}

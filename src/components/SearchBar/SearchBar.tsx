@@ -8,7 +8,7 @@ import search from "../../assets/images/ic_Search@2x.png";
 import { getItems } from "../../utilities/services";
 import { loadItems } from "../../store/actions";
 import { useDispatch } from "react-redux";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./SearchBar.scss";
 import useQuery from "../../hooks/useQuery";
 
@@ -19,7 +19,6 @@ const SearchBar: React.FC<{}> = () => {
   const searchParam = useQuery().get("search");
 
   useEffect(() => {
-    console.log("searchParam", searchParam, "searchValue", searchValue);
     if (searchParam) {
       if (searchValue !== searchParam) setSearchValue(searchParam);
       getItems(searchParam).then((res) => {

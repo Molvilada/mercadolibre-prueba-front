@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Breadcrumb Breadcrumb should render Correctly 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container ProductCard css-11lq3yg-MuiGrid-root"
+  onClick={[Function]}
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto css-1wrgmsj-MuiGrid-root"
+  >
+    <div
+      className="productImg"
+    >
+      <img
+        alt="Apple iPhone 11 (128 Gb) - Negro--img"
+        src="http://http2.mlstatic.com/D_865864-MLA46114990464_052021-I.jpg"
+      />
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1vd824g-MuiGrid-root"
+    style={
+      Object {
+        "paddingLeft": "1rem",
+        "paddingTop": "1rem",
+      }
+    }
+  >
+    <h2>
+      $ 
+      301.000
+      <span
+        className="decimals"
+      >
+        00
+      </span>
+    </h2>
+    <h3>
+      Apple iPhone 11 (128 Gb) - Negro
+    </h3>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 address css-1o7apob-MuiGrid-root"
+    style={
+      Object {
+        "fontSize": "0.85rem",
+        "paddingLeft": "1rem",
+        "paddingTop": "2rem",
+      }
+    }
+  >
+    Capital Federal
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+  >
+    <hr />
+  </div>
+</div>
+`;

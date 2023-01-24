@@ -3,8 +3,8 @@ import BasicLayout from "../BasicLayout/BasicLayout";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
-import logo from "../../assets/images/Logo_ML.png";
-import search from "../../assets/images/ic_Search@2x.png";
+import logo from "../../assets/images/Logo_ML.webp";
+import search from "../../assets/images/ic_Search_2x.webp";
 import { getItems } from "../../utilities/services";
 import { loadItems } from "../../store/actions";
 import { useDispatch } from "react-redux";
@@ -22,7 +22,6 @@ const SearchBar: React.FC<{}> = () => {
     if (searchParam) {
       if (searchValue !== searchParam) setSearchValue(searchParam);
       getItems(searchParam).then((res) => {
-        console.log(res);
         dispatch(loadItems(res));
       });
     } else {
@@ -59,6 +58,7 @@ const SearchBar: React.FC<{}> = () => {
                 endAdornment: (
                   <Box
                     className="searchIcon"
+                    data-testid="searchIcon"
                     sx={{
                       display: "flex",
                       justifyContent: "center",

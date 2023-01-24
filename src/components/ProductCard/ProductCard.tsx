@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import "./ProductCard.scss";
 import { useNavigate } from "react-router-dom";
 import { priceFormat } from "../../utilities/funcUtilities";
+import shipping from "../../assets/images/ic_shipping.webp";
 
 type Props = {
   id: string;
@@ -34,7 +35,10 @@ const ProductCard: React.FC<Props> = ({
         </div>
       </Grid>
       <Grid item xs style={{ paddingTop: "1rem", paddingLeft: "1rem" }}>
-        <h2>{priceFormat(price)}</h2>
+        <div className="priceShipping">
+          <h2>{priceFormat(price)}</h2>
+          <img src={shipping} alt="shipping" />
+        </div>
         <h3>{title}</h3>
       </Grid>
       <Grid

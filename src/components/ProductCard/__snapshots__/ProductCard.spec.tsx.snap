@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/Breadcrumb Breadcrumb should render Correctly 1`] = `
+exports[`components/ProductCard ProductCard should render Correctly 1`] = `
 <div
   className="MuiGrid-root MuiGrid-container ProductCard css-11lq3yg-MuiGrid-root"
   onClick={[Function]}

@@ -1,12 +1,11 @@
 import React from "react";
 import Breadcrumb from "./Breadcrumb";
-import { bestCategory } from "../../utilities/mocks/BestCategory";
 import { render, screen } from "@testing-library/react";
+import { state } from "../../mocks/state";
 
 describe("components/Breadcrumb", () => {
-  test("Breadcrumb should render Correctly", () => {
-    render(<Breadcrumb categories={bestCategory} />);
-    expect(screen.getByText("Celulares y Teléfonos")).toBeInTheDocument();
-    expect(screen.getByText("Celulares y Smartphones")).toBeInTheDocument();
+  test.only("Breadcrumb should render Correctly", () => {
+    render(<Breadcrumb categories={[...state.bestCategory]} />);
+    expect(screen.getByText("Audio")).toBeInTheDocument();
   });
 });

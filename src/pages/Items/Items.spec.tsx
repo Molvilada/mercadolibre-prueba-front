@@ -1,10 +1,10 @@
 import React from "react";
 import Items from "./Items";
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import renderer from "react-test-renderer";
 
-describe("components/SearchBar", () => {
-  test("write inside SearchBar", () => {
-    render(<Items />);
+describe("pages/Items", () => {
+  test("Items should render Correctly", () => {
+    const container = renderer.create(<Items />);
+    expect(container.toJSON()).toMatchSnapshot();
   });
 });

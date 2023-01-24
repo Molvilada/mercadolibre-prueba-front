@@ -4,11 +4,11 @@ import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { useSelector } from "react-redux";
 import Loading from "../../components/Loading/Loading";
-import { InitialState } from "../../types/types";
+import { selectBestCategory, selectItems } from "../../store/selectors";
 
 const Items: React.FC<{}> = () => {
-  const items = useSelector((state: InitialState) => state.items);
-  const bestCategory = useSelector((state: InitialState) => state.bestCategory);
+  const items = useSelector(selectItems);
+  const bestCategory = useSelector(selectBestCategory);
 
   const itemsList = useMemo(
     () =>

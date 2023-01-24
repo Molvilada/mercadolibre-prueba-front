@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import App from "./App";
 import "./index.scss";
-import store from "./store/configureStore";
+import CustomProvider from "./store/CustomProvider";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <Provider store={store}>
+  <CustomProvider>
     <App />
-  </Provider>
+  </CustomProvider>
 );

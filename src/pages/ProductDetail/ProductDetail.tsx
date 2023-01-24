@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./ProductDetail.scss";
 import Loading from "../../components/Loading/Loading";
 import { InitialState, Categories, Item } from "../../types/types";
@@ -14,8 +14,14 @@ const ProductDetail: React.FC<{}> = () => {
   const bestCategory = useSelector((state: InitialState) => state.bestCategory);
   const categories = useSelector((state: InitialState) => state.categories);
   const [categoriesItem, setCategoriesItem] = useState<Categories>([]);
+
   const [itemInfo, setItemInfo] = useState<Item>();
-  const id = useLocation().pathname.split("/").pop();
+  console.log("itemInfo", itemInfo);
+  const { id } = useParams();
+
+  useEffect(() => {
+    console.log("categoriesItem", categoriesItem);
+  }, [categoriesItem]);
 
   useEffect(() => {
     getItemInfo(id!).then((res) => {
@@ -34,7 +40,7 @@ const ProductDetail: React.FC<{}> = () => {
         setCategoriesItem(bestCategory);
       }
     });
-  }, [bestCategory, categories, id]);
+  }, [id]);
 
   return (
     <>

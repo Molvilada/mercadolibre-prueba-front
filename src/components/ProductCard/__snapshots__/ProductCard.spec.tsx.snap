@@ -26,16 +26,28 @@ exports[`components/ProductCard ProductCard should render Correctly 1`] = `
       }
     }
   >
-    <h2>
-      $ 
-      301.000
-      <span
-        className="decimals"
+    <div
+      className="priceShipping"
+    >
+      <h2
+        className="price"
       >
-        00
-      </span>
-    </h2>
-    <h3>
+        $ 
+        301.000
+        <span
+          className="decimals"
+        >
+          00
+        </span>
+      </h2>
+      <img
+        alt="shipping"
+        src="ic_shipping.webp"
+      />
+    </div>
+    <h3
+      className="title"
+    >
       Apple iPhone 11 (128 Gb) - Negro
     </h3>
   </div>
@@ -43,7 +55,7 @@ exports[`components/ProductCard ProductCard should render Correctly 1`] = `
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 address css-1o7apob-MuiGrid-root"
     style={
       Object {
-        "fontSize": "0.85rem",
+        "fontSize": "0.75rem",
         "paddingLeft": "1rem",
         "paddingTop": "2rem",
       }

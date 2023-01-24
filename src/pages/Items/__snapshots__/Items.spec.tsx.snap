@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/Items Items should render Correctly 1`] = `
+Array [
+  <div
+    className="Breadcrumb"
+  >
+    <span>
+      Audio
+    </span>
+  </div>,
+  <div
+    className="MuiGrid-root MuiGrid-container Items basicContainer css-11lq3yg-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container ProductCard css-11lq3yg-MuiGrid-root"
+      onClick={[Function]}
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto css-1wrgmsj-MuiGrid-root"
+      >
+        <div
+          className="productImg"
+        >
+          <img
+            alt="Cable Usb 2.0 Apple Lightning Blanco Con Entrada Usb Salida Lightning--img"
+            src="http://http2.mlstatic.com/D_918400-MLA52464082860_112022-I.jpg"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1vd824g-MuiGrid-root"
+        style={
+          Object {
+            "paddingLeft": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        <div
+          className="priceShipping"
+        >
+          <h2
+            className="price"
+          >
+            $ 
+            600
+            <span
+              className="decimals"
+            >
+              00
+            </span>
+          </h2>
+          <img
+            alt="shipping"
+            src="ic_shipping.webp"
+          />
+        </div>
+        <h3
+          className="title"
+        >
+          Cable Usb 2.0 Apple Lightning Blanco Con Entrada Usb Salida Lightning
+        </h3>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 address css-1o7apob-MuiGrid-root"
+        style={
+          Object {
+            "fontSize": "0.75rem",
+            "paddingLeft": "1rem",
+            "paddingTop": "2rem",
+          }
+        }
+      >
+        Buenos Aires
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <hr />
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-container ProductCard css-11lq3yg-MuiGrid-root"
+      onClick={[Function]}
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto css-1wrgmsj-MuiGrid-root"
+      >
+        <div
+          className="productImg"
+        >
+          <img
+            alt="Apple AirPods (3ª generación) Con estuche De carga Lightning--img"
+            src="http://http2.mlstatic.com/D_615592-MLM51650325727_092022-I.jpg"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1vd824g-MuiGrid-root"
+        style={
+          Object {
+            "paddingLeft": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        <div
+          className="priceShipping"
+        >
+          <h2
+            className="price"
+          >
+            $ 
+            28.116
+            <span
+              className="decimals"
+            >
+              00
+            </span>
+          </h2>
+          <img
+            alt="shipping"
+            src="ic_shipping.webp"
+          />
+        </div>
+        <h3
+          className="title"
+        >
+          Apple AirPods (3ª generación) Con estuche De carga Lightning
+        </h3>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 address css-1o7apob-MuiGrid-root"
+        style={
+          Object {
+            "fontSize": "0.75rem",
+            "paddingLeft": "1rem",
+            "paddingTop": "2rem",
+          }
+        }
+      >
+        Buenos Aires
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <hr />
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-container ProductCard css-11lq3yg-MuiGrid-root"
+      onClick={[Function]}
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto css-1wrgmsj-MuiGrid-root"
+      >
+        <div
+          className="productImg"
+        >
+          <img
+            alt="Apple Earpods Con Conector De 3.5 Mm - Blanco--img"
+            src="http://http2.mlstatic.com/D_831247-MLA46346545723_062021-I.jpg"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1vd824g-MuiGrid-root"
+        style={
+          Object {
+            "paddingLeft": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        <div
+          className="priceShipping"
+        >
+          <h2
+            className="price"
+          >
+            $ 
+            4.399
+            <span
+              className="decimals"
+            >
+              00
+            </span>
+          </h2>
+          <img
+            alt="shipping"
+            src="ic_shipping.webp"
+          />
+        </div>
+        <h3
+          className="title"
+        >
+          Apple Earpods Con Conector De 3.5 Mm - Blanco
+        </h3>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 address css-1o7apob-MuiGrid-root"
+        style={
+          Object {
+            "fontSize": "0.75rem",
+            "paddingLeft": "1rem",
+            "paddingTop": "2rem",
+          }
+        }
+      >
+        Buenos Aires
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <hr />
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-container ProductCard css-11lq3yg-MuiGrid-root"
+      onClick={[Function]}
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto css-1wrgmsj-MuiGrid-root"
+      >
+        <div
+          className="productImg"
+        >
+          <img
+            alt="Funda Silicona Animada Para AirPods Inpods 12 I12 Diseños--img"
+            src="http://http2.mlstatic.com/D_824016-MLA50446569499_062022-I.jpg"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1vd824g-MuiGrid-root"
+        style={
+          Object {
+            "paddingLeft": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        <div
+          className="priceShipping"
+        >
+          <h2
+            className="price"
+          >
+            $ 
+            999
+            <span
+              className="decimals"
+            >
+              00
+            </span>
+          </h2>
+          <img
+            alt="shipping"
+            src="ic_shipping.webp"
+          />
+        </div>
+        <h3
+          className="title"
+        >
+          Funda Silicona Animada Para AirPods Inpods 12 I12 Diseños
+        </h3>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 address css-1o7apob-MuiGrid-root"
+        style={
+          Object {
+            "fontSize": "0.75rem",
+            "paddingLeft": "1rem",
+            "paddingTop": "2rem",
+          }
+        }
+      >
+        Buenos Aires
+      </div>
+    </div>
+  </div>,
+]
+`;

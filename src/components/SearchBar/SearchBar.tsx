@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import logo from "../../assets/images/Logo_ML.webp";
 import search from "../../assets/images/ic_Search_2x.webp";
 import { getItems } from "../../utilities/services";
-import { loadItems } from "../../store/actions";
+import loadItems from "../../store/actions";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import "./SearchBar.scss";

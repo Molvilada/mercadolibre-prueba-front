@@ -1,9 +1,6 @@
-import { Action, GetItemsResponse } from "../types/types";
+import { createAction } from "@reduxjs/toolkit";
+import { GetItemsResponse } from "../types/types";
 
-export const LOAD_ITEMS = "LOAD_ITEMS";
-export const LOAD_ITEM_INFO = "LOAD_ITEM_INFO";
+const loadItems = createAction<GetItemsResponse>("LOAD_ITEMS");
 
-export const loadItems = (payload: GetItemsResponse): Action => ({
-  type: LOAD_ITEMS,
-  payload,
-});
+export default loadItems;

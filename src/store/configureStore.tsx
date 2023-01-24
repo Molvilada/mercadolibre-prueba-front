@@ -7,7 +7,6 @@ const initialState = {
   categories: [],
   items: [],
   bestCategory: [],
-  query: "",
 } as InitialState;
 
 const reducers = (state = initialState, action: Action) => {

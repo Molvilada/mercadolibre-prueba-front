@@ -36,15 +36,15 @@ const ProductCard: React.FC<Props> = ({
       </Grid>
       <Grid item xs style={{ paddingTop: "1rem", paddingLeft: "1rem" }}>
         <div className="priceShipping">
-          <h2>{priceFormat(price)}</h2>
+          <h2 className="price">{priceFormat(price)}</h2>
           <img src={shipping} alt="shipping" />
         </div>
-        <h3>{title}</h3>
+        <h3 className="title">{title}</h3>
       </Grid>
       <Grid
         item
         xs={2}
-        style={{ paddingTop: "2rem", paddingLeft: "1rem", fontSize: "0.85rem" }}
+        style={{ paddingTop: "2rem", paddingLeft: "1rem", fontSize: "0.75rem" }}
         className="address"
       >
         {address}

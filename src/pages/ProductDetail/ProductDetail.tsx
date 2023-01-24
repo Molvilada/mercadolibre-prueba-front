@@ -17,10 +17,6 @@ const ProductDetail: React.FC<{}> = () => {
   const [itemInfo, setItemInfo] = useState<Item>();
   const id = useLocation().pathname.split("/").pop();
 
-  const words = {
-    new: "Nuevo",
-  };
-
   useEffect(() => {
     getItemInfo(id!).then((res) => {
       setItemInfo(res.item);
@@ -52,12 +48,12 @@ const ProductDetail: React.FC<{}> = () => {
               </div>
             </Grid>
             <Grid item xs={4} style={{ paddingLeft: "3rem" }}>
-              <p>
-                {words[itemInfo.condition as keyof typeof words]} -{" "}
+              <p className="selled">
+                {itemInfo.condition === "new" ? "Nuevo" : "Usado"} -{" "}
                 {itemInfo.sold_quantity} vendidos
               </p>
-              <h2>{itemInfo.title}</h2>
-              <h1>{priceFormat(itemInfo.price?.amount)}</h1>
+              <h2 className="title">{itemInfo.title}</h2>
+              <h1 className="price">{priceFormat(itemInfo.price?.amount)}</h1>
               <Button variant="contained" size="large" fullWidth>
                 Comprar
               </Button>

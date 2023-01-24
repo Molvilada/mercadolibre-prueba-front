@@ -2,7 +2,7 @@
 
 .ProductCard {
   cursor: pointer;
-  padding: 18px;
+  padding: 16px;
   h2 {
     margin-top: 0px;
   }
@@ -32,12 +32,17 @@
       object-fit: contain;
     }
   }
+  .title {
+    font-size: 1.125rem;
+    margin-top: 32px;
+  }
 
   .priceShipping {
     display: flex;
     align-items: center;
-    h2 {
+    .price {
       margin-bottom: 0px;
+      font-size: 1.5rem;
     }
     img {
       margin-left: 10px;
@@ -47,6 +52,6 @@
   }
 
   .address {
-    color: $text-secondary;
+    color: $address;
   }
 }

@@ -6,7 +6,7 @@ exports[`components/ProductCard ProductCard should render Correctly 1`] = `
   onClick={[Function]}
 >
   <div
-    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto css-1wrgmsj-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto productImgContainer css-pr9bjb-MuiGrid-root"
   >
     <div
       className="productImg"

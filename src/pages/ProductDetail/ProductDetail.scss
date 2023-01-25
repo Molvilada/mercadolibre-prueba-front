@@ -2,6 +2,11 @@
 
 .ProductDetail {
   padding: 32px;
+  @media (min-width: 900px) {
+    .productInfo {
+      padding-left: 3rem;
+    }
+  }
   .selled {
     font-size: 0.875rem;
     margin-top: 16px;

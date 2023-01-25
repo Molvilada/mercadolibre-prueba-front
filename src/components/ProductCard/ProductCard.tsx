@@ -29,7 +29,7 @@ const ProductCard: React.FC<Props> = ({
   };
   return (
     <Grid container className="ProductCard" onClick={handleClick}>
-      <Grid item xs="auto">
+      <Grid item className="productImgContainer" xs={12} sm="auto">
         <div className="productImg">
           <img src={image} alt={`${title}--img`}></img>
         </div>

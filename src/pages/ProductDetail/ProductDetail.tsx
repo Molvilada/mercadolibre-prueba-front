@@ -43,12 +43,12 @@ const ProductDetail: React.FC<{}> = () => {
         <>
           <Breadcrumb categories={categoriesItem} />
           <Grid className="ProductDetail basicContainer" container>
-            <Grid item xs={8}>
+            <Grid item xs={12} md={8}>
               <div className="productImg">
                 <img src={itemInfo.picture} alt="" />
               </div>
             </Grid>
-            <Grid item xs={4} style={{ paddingLeft: "3rem" }}>
+            <Grid item xs={12} md={4} className="productInfo">
               <p className="selled">
                 {itemInfo.condition === "new" ? "Nuevo" : "Usado"} -{" "}
                 {itemInfo.sold_quantity} vendidos
@@ -59,7 +59,7 @@ const ProductDetail: React.FC<{}> = () => {
                 Comprar
               </Button>
             </Grid>
-            <Grid item xs={8} className="description">
+            <Grid item xs={12} md={8} className="description">
               <h2>Descripción del producto</h2>
               <p>{itemInfo.description}</p>
             </Grid>

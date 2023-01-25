@@ -12,8 +12,8 @@ import { selectBestCategory, selectCategories } from "../../store/selectors";
 import { Categories, Item } from "../../types/types";
 
 const ProductDetail: React.FC<{}> = () => {
-  const categories = useSelector(selectCategories);
   const bestCategory = useSelector(selectBestCategory);
+  const categories = useSelector(selectCategories);
   const [categoriesItem, setCategoriesItem] = useState<Categories>([]);
   const [itemInfo, setItemInfo] = useState<Item>();
   const { id } = useParams();

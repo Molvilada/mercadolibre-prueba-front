@@ -79,7 +79,6 @@ export const getItemInfo = async (id) => {
       category_id: item.category_id,
     },
   };
-  console.log(response);
 
   return response;
 };

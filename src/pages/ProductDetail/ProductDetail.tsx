@@ -8,20 +8,15 @@ import Button from "@mui/material/Button";
 import { useParams } from "react-router-dom";
 import "./ProductDetail.scss";
 import Loading from "../../components/Loading/Loading";
-import { InitialState, Categories, Item } from "../../types/types";
+import { selectBestCategory, selectCategories } from "../../store/selectors";
+import { Categories, Item } from "../../types/types";
 
 const ProductDetail: React.FC<{}> = () => {
-  const bestCategory = useSelector((state: InitialState) => state.bestCategory);
-  const categories = useSelector((state: InitialState) => state.categories);
+  const categories = useSelector(selectCategories);
+  const bestCategory = useSelector(selectBestCategory);
   const [categoriesItem, setCategoriesItem] = useState<Categories>([]);
-
   const [itemInfo, setItemInfo] = useState<Item>();
-  console.log("itemInfo", itemInfo);
   const { id } = useParams();
-
-  useEffect(() => {
-    console.log("categoriesItem", categoriesItem);
-  }, [categoriesItem]);
 
   useEffect(() => {
     getItemInfo(id!).then((res) => {
